@@ -3,20 +3,17 @@ package com.pallaw.composemultiplatformreels.android
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.pallaw.composemultiplatformreels.App
-import com.pallaw.composemultiplatformreels.Greeting
+import com.pallaw.composemultiplatformreels.android.views.ReelsView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MyApplicationTheme {
-               App()
+               ReelsView()
             }
         }
     }
