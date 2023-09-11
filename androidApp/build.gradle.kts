@@ -47,7 +47,10 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.4.3")
     implementation("androidx.compose.material:material:1.4.3")
     implementation("androidx.activity:activity-compose:1.7.1")
-
-    implementation("com.google.android.exoplayer:exoplayer:2.15.0")
     implementation("com.github.skydoves:landscapist-glide:1.3.1")
+
+    val media3_version = "1.1.1"
+    implementation("androidx.media3:media3-exoplayer:$media3_version")
+    implementation("androidx.media3:media3-ui:$media3_version")
+    implementation("androidx.media3:media3-exoplayer-hls:$media3_version")
 }
